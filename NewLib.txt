@@ -2312,15 +2312,12 @@ function Tab:AddInfoBruton()
 	function InfoBruton:Destroy()
 		Frame:Destroy()
 	end
-
-	return InfoBruton
-end
-    return Tab
-  end
-  
-  CloseButton.Activated:Connect(Window.CloseBtn)
-  MinimizeButton.Activated:Connect(Window.MinimizeBtn)
-  return Window
+        return InfoBruton
 end
 
+function redzlib:MakeWindow(Configs)
+    local WTitle = Configs[1] or Configs.Name or Configs.Title or "Rael Hub"
+    local WMiniText = Configs[2] or Configs.SubTitle or "by : Bruton 78"
+        return redzlib
+end
 return redzlib
